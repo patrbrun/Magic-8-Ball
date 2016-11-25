@@ -17,17 +17,23 @@ public class PseudoCode {
         // User input: name and questions.
 
         String name;
-        System.out.print("Hello. \n" + "Don't be scared. \n" + "I am a magic 8 ball and I will answer all your questions about \n" + "Life, \n" + "The universe \n" + "And everything. \n" + "First, tell me, what is your name?");
+        System.out.print("Hello. \n" +
+                "Don't be scared. \n" +
+                "I am a magic 8 ball and I will answer all your questions about \n" +
+                "Life, \n" +
+                "The universe \n" +
+                "And everything. \n" +
+                "First, tell me, what is your name? ");
         name = TextIO.getlnString();
 
         // Asks for the user's question using TextIO.
 
         String question;
-        System.out.print("Hello " + name + ". What question do you have for me?");
+        System.out.print("Hello " + name + ". What question do you have for me? ");
         question = TextIO.getlnString();
 
-       // if (question == null) FIX THIS!
-         //   System.out.println("Trying to test my powers, smartypants? You must type a question!");
+        // if (question == null) FIX THIS!
+        //   System.out.println("Trying to test my powers, smartypants? You must type a question!");
 
         // Random method to select answers randomly from 1 to 5.
 
@@ -54,7 +60,6 @@ public class PseudoCode {
     }
 
 
-
     public static void nextQuestion() {
         System.out.print("Hello! What is your question? ");
         Scanner input = new Scanner(System.in);
@@ -69,11 +74,13 @@ public class PseudoCode {
         while (anotherQuestion) {
             System.out.println("Do you want to ask me another question? Type YES or NO.");
             yesOrNo = TextIO.getlnBoolean();
+        }
+    }
+}
 
+            /**
             if (yesOrNo = "Y") {
                 // Use the created answer method here!
                 System.out.println("Cool. I think I have time for one more question. What do you want to know?");
                 // anotherQuestion = Answer method!
-            }
-        }
-    }
+             */
