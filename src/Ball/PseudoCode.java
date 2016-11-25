@@ -35,6 +35,8 @@ public class PseudoCode {
         int answer = 1 + r.nextInt(6);
         String response = "";
 
+        // Create answer method here!
+
         if (answer == 0)
             response = "Yes. Definitely yes. No doubts about it.";
         else if (answer == 1)
@@ -68,11 +70,10 @@ public class PseudoCode {
             System.out.println("Do you want to ask me another question? Type YES or NO.");
             yesOrNo = TextIO.getlnBoolean();
 
-
-
-
+            if (yesOrNo = "Y") {
+                // Use the created answer method here!
+                System.out.println("Cool. I think I have time for one more question. What do you want to know?");
+                // anotherQuestion = Answer method!
+            }
         }
-
     }
-
-}
