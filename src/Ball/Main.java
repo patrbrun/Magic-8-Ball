@@ -1,4 +1,4 @@
-package Magic8Ball;
+package Ball;
 
 import lib.TextIO;
 
