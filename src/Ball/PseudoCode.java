@@ -4,6 +4,7 @@ import com.sun.org.apache.xpath.internal.SourceTree;
 import lib.TextIO;
 
 import java.util.Random;
+import java.util.Scanner;
 
 /**
  * Created by pati on 25.11.16.
@@ -24,11 +25,12 @@ public class PseudoCode {
         String question;
         System.out.print("Hello " + name + ". What question do you have for me?");
         question = TextIO.getlnString();
-        if (question == null)
-            System.out.println("Trying to test my powers, smartypants? You must type a question!");
+
+       // if (question == null) FIX THIS!
+         //   System.out.println("Trying to test my powers, smartypants? You must type a question!");
 
         // Random method to select answers randomly from 1 to 5.
-        
+
         Random r = new Random();
         int answer = 1 + r.nextInt(6);
         String response = "";
@@ -46,6 +48,31 @@ public class PseudoCode {
         else if (answer == 5)
             response = "Why are you even asking me that? Of course it's a NO!";
         System.out.println(response);
+
+    }
+
+
+
+    public static void nextQuestion() {
+        System.out.print("Hello! What is your question? ");
+        Scanner input = new Scanner(System.in);
+        String question = input.nextLine();
+
+        // User wants to ask another question
+
+        boolean yesOrNo;
+        String nextQuestion;
+
+        boolean anotherQuestion = true;
+        while (anotherQuestion) {
+            System.out.println("Do you want to ask me another question? Type YES or NO.");
+            yesOrNo = TextIO.getlnBoolean();
+
+
+
+
+        }
+
     }
 
 }
