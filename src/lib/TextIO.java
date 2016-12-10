@@ -146,7 +146,7 @@ public class TextIO {
     }
 
     /**
-     * Puts a GUI file-selection dialog box on the screen in which the user can select
+     * Puts a Main file-selection dialog box on the screen in which the user can select
      * an input file.  If the user cancels the dialog instead of selecting a file, it is
      * not considered an error, but the return value of the subroutine is false.
      * If the user does select a file, but there is an error while trying to open the
@@ -155,9 +155,9 @@ public class TextIO {
      * subroutine is true, and  the input routines will read from the file, instead of
      * from standard input.   If the user cancels, or if any error occurs, then the
      * previous input source is not changed.
-     * <p>NOTE: Calling this method starts a GUI user interface thread, which can continue
+     * <p>NOTE: Calling this method starts a Main user interface thread, which can continue
      * to run even if the thread that runs the main program ends.  If you use this method
-     * in a non-GUI program, it might be necessary to call System.exit(0) at the end of the main()
+     * in a non-Main program, it might be necessary to call System.exit(0) at the end of the main()
      * routine to shut down the Java virtual machine completely.
      */
     public static boolean readUserSelectedFile() {
@@ -250,9 +250,9 @@ public class TextIO {
      * is thrown.  If the file is opened successfully, then after this method is called,
      * all of the output routines will write to the file, instead of to  standard output.
      * If an error occurs, the output destination is not changed.
-     * <p>NOTE: Calling this method starts a GUI user interface thread, which can continue
+     * <p>NOTE: Calling this method starts a Main user interface thread, which can continue
      * to run even if the thread that runs the main program ends.  If you use this method
-     * in a non-GUI program, it might be necessary to call System.exit(0) at the end of the main()
+     * in a non-Main program, it might be necessary to call System.exit(0) at the end of the main()
      * routine to shut down the Java virtual machine completely.
      */
     public static void writeFile(String fileName) {
@@ -282,7 +282,7 @@ public class TextIO {
     }
 
     /**
-     * Puts a GUI file-selection dialog box on the screen in which the user can select
+     * Puts a Main file-selection dialog box on the screen in which the user can select
      * an output file.  If the user cancels the dialog instead of selecting a file, it is
      * not considered an error, but the return value of the subroutine is false.
      * If the user does select a file, but there is an error while trying to open the
