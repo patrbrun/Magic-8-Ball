@@ -9,7 +9,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="532.0" prefWidth="489.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="graphicUserInterface.Controller">
    <children>
-      <ImageView fitHeight="400.0" fitWidth="600.0" layoutX="39.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="400.0" fitWidth="600.0" layoutX="39.0" layoutY="68.0" onMouseClicked="#generateRandom" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@magic8ball.jpg" />
          </image>
@@ -17,5 +17,19 @@
       <Button layoutX="41.0" layoutY="79.0" mnemonicParsing="false" onAction="#generateRandom" opacity="0.0" prefHeight="382.0" prefWidth="403.0" text="Click" textAlignment="CENTER" wrapText="true" />
       <Label fx:id="messageLabel" layoutX="165.0" layoutY="220.0" prefHeight="116.0" prefWidth="158.0" textAlignment="CENTER" textFill="WHITE" wrapText="true" />
       <Label layoutX="39.0" layoutY="10.0" prefHeight="69.0" prefWidth="392.0" text="Ask me a YES or NO question. Click me to get your answer!" />
+      <MenuBar AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+               <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+               </items>
+          </Menu>
+        </menus>
+      </MenuBar>
    </children>
 </AnchorPane>
