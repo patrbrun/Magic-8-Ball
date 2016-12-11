@@ -1,6 +1,5 @@
-package Ball;
+package Main8Ball;
 
-import com.sun.org.apache.xpath.internal.SourceTree;
 import lib.TextIO;
 
 import java.util.Random;

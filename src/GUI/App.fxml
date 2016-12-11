@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <?import javafx.scene.effect.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
@@ -6,17 +7,15 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="467.0" prefWidth="408.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="532.0" prefWidth="489.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.Controller">
    <children>
-      <ImageView fitHeight="400.0" fitWidth="600.0" layoutX="-1.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="400.0" fitWidth="600.0" layoutX="39.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@magic8ball.jpg" />
          </image>
       </ImageView>
-      <Button alignment="CENTER" layoutX="52.0" layoutY="285.0" mnemonicParsing="false" prefHeight="89.0" prefWidth="305.0" text="Ask me a question and then click me!" textAlignment="CENTER">
-         <opaqueInsets>
-            <Insets />
-         </opaqueInsets>
-      </Button>
+      <Button layoutX="217.0" layoutY="410.0" mnemonicParsing="false" onAction="#generateRandom" text="Click" />
+      <Label layoutX="196.0" layoutY="277.0" text="Label" />
+      <Label layoutX="99.0" layoutY="15.0" prefHeight="50.0" prefWidth="270.0" text="Ask a yes or no question and click me to get the answer!" textAlignment="CENTER" wrapText="true" />
    </children>
 </AnchorPane>
