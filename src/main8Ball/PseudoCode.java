@@ -1,4 +1,4 @@
-package Main8Ball;
+package main8Ball;
 
 import lib.TextIO;
 

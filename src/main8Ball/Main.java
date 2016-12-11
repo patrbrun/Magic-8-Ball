@@ -1,4 +1,4 @@
-package Main8Ball;/**
+package main8Ball;/**
  * Created by pati on 10.12.16.
  */
 
@@ -20,11 +20,11 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws IOException {
 
         // Access the App.fxml file
-        Parent root = (Parent)FXMLLoader.load(this.getClass().getResource("/GUI/App.fxml"));
+        Parent root = (Parent)FXMLLoader.load(this.getClass().getResource("/graphicUserInterface/App.fxml"));
 
         Scene ball = new Scene(root, 500, 600);
 
-        primaryStage.setTitle("Magic 8 Main8Ball, by Patricia");
+        primaryStage.setTitle("Magic 8 main8Ball, by Patricia");
         primaryStage.setScene(ball);
         primaryStage.show();
 
