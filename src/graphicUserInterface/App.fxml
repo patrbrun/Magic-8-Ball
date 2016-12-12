@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
 <?import javafx.scene.text.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.image.*?>
@@ -27,6 +28,6 @@
           </Menu>
         </menus>
       </MenuBar>
-      <Label alignment="CENTER" layoutX="34.0" layoutY="534.0" prefHeight="15.0" prefWidth="423.0" text="Patricia Bruno Barbosa - CyberSecurity Engineering - 2016" textAlignment="CENTER" />
+      <Button layoutX="193.0" layoutY="530.0" mnemonicParsing="false" onAction="#resetButton" prefHeight="25.0" prefWidth="94.0" text="About" />
     </children>
 </AnchorPane>

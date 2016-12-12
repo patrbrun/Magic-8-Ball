@@ -7,7 +7,9 @@ package graphicUserInterface;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.input.MouseEvent;
 
 import java.util.*;
 
@@ -19,6 +21,9 @@ public class Controller {
 
     @FXML
     private Label messageLabel;
+
+    @FXML
+    private Button resetButton;
 
 
     public void generateRandom(ActionEvent event) {
@@ -47,5 +52,11 @@ public class Controller {
     // Exit button
     public void menuClose(ActionEvent event) {
         Platform.exit();
+    }
+
+    @FXML
+    void resetButton(ActionEvent event) {
+        System.out.println("Created by Patricia Bruno Barbosa - CyberSecurity Engineering - 2016");
+
     }
 }
