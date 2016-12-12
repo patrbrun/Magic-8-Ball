@@ -14,3 +14,4 @@ Copy this repository and run it in your own computer.
 * User input for the question
 * Ball shakes when clicked on
 * Welcome Screen and Exit Screen
+* Add reset/replay button
