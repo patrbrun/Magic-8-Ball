@@ -62,11 +62,13 @@ public class Controller {
         System.out.println("Created by Patricia Bruno Barbosa - CyberSecurity Engineering - 2016");
     }
         @FXML
-        void dailyMessages(ActionEvent event){
-            String[] elements = {"Your day will be full of joy", "and luck", "and peace."};
-            for (String s : elements) {
-                System.out.println(s);
+        void lotteryNumbers(ActionEvent event){
+            for(int counter=0 ; counter < 50 ; counter++)
+            {
+                System.out.println("Your lucky number is " + counter);
             }
+
         }
-    }
+        }
+
 

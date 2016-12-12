@@ -28,7 +28,7 @@
           </Menu>
         </menus>
       </MenuBar>
-      <Button layoutX="83.0" layoutY="527.0" mnemonicParsing="false" onAction="#aboutButton" prefHeight="25.0" prefWidth="94.0" text="About" />
-      <Button layoutX="241.0" layoutY="525.0" mnemonicParsing="false" onAction="#dailyMessages" text="Click here for a daily message!" />
+      <Button layoutX="72.0" layoutY="521.0" mnemonicParsing="false" onAction="#aboutButton" prefHeight="25.0" prefWidth="94.0" text="About" />
+      <Button layoutX="219.0" layoutY="524.0" mnemonicParsing="false" onAction="#lotteryNumbers" text="Click for your lucky lottery numbers!" />
     </children>
 </AnchorPane>
