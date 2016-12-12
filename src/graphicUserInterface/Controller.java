@@ -23,7 +23,10 @@ public class Controller {
     private Label messageLabel;
 
     @FXML
-    private Button resetButton;
+    private Button aboutButton;
+
+    @FXML
+    private Button dailyMessages;
 
 
     public void generateRandom(ActionEvent event) {
@@ -55,8 +58,15 @@ public class Controller {
     }
 
     @FXML
-    void resetButton(ActionEvent event) {
+    void aboutButton(ActionEvent event) {
         System.out.println("Created by Patricia Bruno Barbosa - CyberSecurity Engineering - 2016");
-
     }
-}
+        @FXML
+        void dailyMessages(ActionEvent event){
+            String[] elements = {"Your day will be full of joy", "and luck", "and peace."};
+            for (String s : elements) {
+                System.out.println(s);
+            }
+        }
+    }
+

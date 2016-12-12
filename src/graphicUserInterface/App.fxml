@@ -28,6 +28,7 @@
           </Menu>
         </menus>
       </MenuBar>
-      <Button layoutX="193.0" layoutY="530.0" mnemonicParsing="false" onAction="#resetButton" prefHeight="25.0" prefWidth="94.0" text="About" />
+      <Button layoutX="83.0" layoutY="527.0" mnemonicParsing="false" onAction="#aboutButton" prefHeight="25.0" prefWidth="94.0" text="About" />
+      <Button layoutX="241.0" layoutY="525.0" mnemonicParsing="false" onAction="#dailyMessages" text="Click here for a daily message!" />
     </children>
 </AnchorPane>
