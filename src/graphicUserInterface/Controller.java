@@ -4,6 +4,7 @@ package graphicUserInterface;
  * Created by pati on 10.12.16.
  */
 
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
@@ -18,6 +19,7 @@ public class Controller {
 
     @FXML
     private Label messageLabel;
+
 
     public void generateRandom(ActionEvent event) {
         Random randomAnswer = new Random();
@@ -40,7 +42,10 @@ public class Controller {
         // Prints the message on the GUI
 
         messageLabel.setText(random);
+    }
 
-
+    // Exit button
+    public void menuClose(ActionEvent event) {
+        Platform.exit();
     }
 }
