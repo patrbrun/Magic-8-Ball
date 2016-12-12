@@ -15,3 +15,4 @@ Copy this repository and run it in your own computer.
 * Ball shakes when clicked on
 * Welcome Screen and Exit Screen
 * Add reset/replay button
+* Question counter: How many questions has the user asked?
